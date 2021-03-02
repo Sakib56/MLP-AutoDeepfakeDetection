@@ -1,0 +1,113 @@
+import cv2
+import face_recognition
+import numpy as np
+from operator import itemgetter
+
+def get_every_frame(video , interval=1):
+    frames = []
+    vidcap = cv2.VideoCapture(video)
+    success, image = vidcap.read()
+
+    count = 0
+    while success:
+        if not count % interval:
+            frames.append(image[:, :, ::-1])
+        success, image = vidcap.read()
+        count += 1
+        
+    return frames
+
+
+def get_face_locations(frames, GPU=False, batch_size=96):
+    face_coordinates = []
+    if GPU:
+        for i in range(0, len(frames), batch_size):
+            batch_of_frames = frames[i:i+batch_size]
+            batch_face_locations = face_recognition.batch_face_locations(batch_of_frames, number_of_times_to_upsample=0)
+            face_coordinates += batch_face_locations
+        face_coordinates = [f[-1] if f is not None and len(f) else None for f in face_coordinates]
+    else:
+        for frame in frames:
+            coordinates_found = face_recognition.face_locations(frame)
+            if coordinates_found is not None and len(coordinates_found):
+                face_coordinates.append(coordinates_found[-1])
+            else:
+                face_coordinates.append(None)
+        
+    return face_coordinates
+
+
+def get_centroid(face_coordinates):
+    cleaned_face_coordinates = np.asarray([f for f in face_coordinates if f is not None])
+
+    length = cleaned_face_coordinates.shape[0]
+    sum_t = np.sum(cleaned_face_coordinates[:, 0])
+    sum_r = np.sum(cleaned_face_coordinates[:, 1])
+    sum_b = np.sum(cleaned_face_coordinates[:, 2])
+    sum_l = np.sum(cleaned_face_coordinates[:, 3])
+
+    return np.asarray((sum_t, sum_r, sum_b, sum_l)) / length
+
+
+def get_distance_from_centroid(centroid, face_coordinates):
+    dist_from_centroid = []
+    for coord in face_coordinates:
+        if coord is not None:
+            dist_from_centroid.append(np.linalg.norm(centroid-coord))
+        else:
+            dist_from_centroid.append(coord)
+            
+    return dist_from_centroid
+
+
+def get_stable_faces(movement_thershold, dist_from_centroid, face_coordinates, frames, zoomed=False):
+    stable_faces = []
+    if zoomed:
+        for dist, coord, frame in zip(dist_from_centroid, face_coordinates, frames):
+            if dist is not None:
+                if dist <= movement_thershold:
+                    t,r,b,l = coord
+                    stable_faces.append(frame[t:b, l:r])
+    else:
+        face_coordinates_in_thrshld = []
+        for dist, coord in zip(dist_from_centroid, face_coordinates):
+            if dist is not None and dist <= movement_thershold:
+                face_coordinates_in_thrshld.append(coord)
+
+        face_coordinates_in_thrshld = [f for f in face_coordinates_in_thrshld if f is not None]
+        min_top = min(face_coordinates_in_thrshld, key=itemgetter(0))[0]
+        max_right = max(face_coordinates_in_thrshld, key=itemgetter(1))[1]
+        max_bottom = max(face_coordinates_in_thrshld, key=itemgetter(2))[2]
+        min_left = min(face_coordinates_in_thrshld, key=itemgetter(3))[3]
+
+        for dist, frame in zip(dist_from_centroid, frames):
+            if dist is not None and dist <= movement_thershold:
+                stable_faces.append(frame[min_top:max_bottom, min_left:max_right])
+                
+    return stable_faces
+
+
+def average(frames):
+    h,w,c = frames[0].shape
+    N = len(frames)
+    avg = np.zeros((h,w,c), np.float)
+
+    for frame in frames:
+        frame = np.array(frame, dtype=np.float)
+        avg += (frame/N)
+    avg = np.array(np.round(avg), dtype=np.uint8)
+
+    return avg
+
+
+def difference(frames, interval):
+    h,w,c = frames[0].shape
+    diff = np.zeros((h,w,c), np.float)
+
+    for current_frame, next_frame in zip(frames[::interval], frames[interval::interval]):
+        current_frame = np.array(current_frame, dtype=np.float)
+        next_frame = np.array(next_frame, dtype=np.float)
+        diff += np.absolute(next_frame - current_frame)
+    diff = np.array(np.round(diff), dtype=np.uint8)
+
+    return diff
