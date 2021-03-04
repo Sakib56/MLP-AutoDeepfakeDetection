@@ -17,6 +17,8 @@ def get_every_frame(video , interval=1):
         
     return frames
 
+def grouped(iterable, n):
+    return zip(*[iter(iterable)]*n)
 
 def get_face_locations(frames, GPU=False, batch_size=96):
     face_coordinates = []
@@ -86,6 +88,44 @@ def get_stable_faces(movement_thershold, dist_from_centroid, face_coordinates, f
                 
     return stable_faces
 
+def stabilise(face_coordinates, frames):
+    stable_faces = []
+    
+    cleaned_face_coordinates = [f for f in face_coordinates if f is not None]
+    min_top = min(cleaned_face_coordinates, key=itemgetter(0))[0]
+    max_right = max(cleaned_face_coordinates, key=itemgetter(1))[1]
+    max_bottom = max(cleaned_face_coordinates, key=itemgetter(2))[2]
+    min_left = min(cleaned_face_coordinates, key=itemgetter(3))[3]
+
+    for frame in frames:
+        stable_faces.append(frame[min_top:max_bottom, min_left:max_right])
+                
+    return stable_faces
+
+
+def sub_average(frames, face_coordinates, interval):
+    h,w,c = frames[0].shape
+    avg = []
+
+    for sub_frames, sub_face_coordinates in zip(grouped(frames, n=interval), grouped(face_coordinates, n=interval)):
+        if (not None) in sub_face_coordinates:
+            crop = stabilise(sub_face_coordinates, sub_frames)
+            avg.append(average(crop))
+
+    return avg
+
+
+def sub_difference(frames, face_coordinates, interval):
+    h,w,c = frames[0].shape
+    diff = []
+
+    for sub_frames, sub_face_coordinates in zip(grouped(frames, n=interval), grouped(face_coordinates, n=interval)):
+        if (not None) in sub_face_coordinates:
+            crop = stabilise(sub_face_coordinates, sub_frames)
+            diff.append(difference(crop))
+
+    return diff
+
 
 def average(frames):
     h,w,c = frames[0].shape
@@ -100,7 +140,7 @@ def average(frames):
     return avg
 
 
-def difference(frames, interval):
+def difference(frames, interval=1):
     h,w,c = frames[0].shape
     diff = np.zeros((h,w,c), np.float)
 
