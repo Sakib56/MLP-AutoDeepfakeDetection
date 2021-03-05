@@ -3,6 +3,7 @@ import face_recognition
 import numpy as np
 from operator import itemgetter
 
+
 def get_every_frame(video , interval=1):
     frames = []
     vidcap = cv2.VideoCapture(video)
@@ -17,8 +18,10 @@ def get_every_frame(video , interval=1):
         
     return frames
 
+
 def grouped(iterable, n):
     return zip(*[iter(iterable)]*n)
+
 
 def get_face_locations(frames, GPU=False, batch_size=96):
     face_coordinates = []
@@ -87,6 +90,7 @@ def get_stable_faces(movement_thershold, dist_from_centroid, face_coordinates, f
                 stable_faces.append(frame[min_top:max_bottom, min_left:max_right])
                 
     return stable_faces
+
 
 def stabilise(face_coordinates, frames):
     stable_faces = []
