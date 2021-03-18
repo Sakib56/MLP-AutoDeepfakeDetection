@@ -1,8 +1,14 @@
+import os
 import cv2
 import face_recognition
+from PIL import Image
+from tqdm import tqdm
 import numpy as np
 from operator import itemgetter
-
+from heapq import nsmallest
+from math import ceil
+from time import time
+from random import randint, seed
 
 def get_every_frame(video , interval=1):
     frames = []
@@ -23,7 +29,22 @@ def grouped(iterable, n):
     return zip(*[iter(iterable)]*n)
 
 
-def get_face_locations(frames, GPU=False, batch_size=96):
+def save_faces(face_list, saving_dir):
+    for i, face in enumerate(face_list):
+        Image.fromarray(face, mode='RGB').save(f'{saving_dir}_{i}.png', 'PNG')
+
+
+def filterNones(frames, faces):
+    cleaned_frames, cleaned_face = [], []
+    for fr, fa in zip(frames, faces):
+        if fa is not None:
+            cleaned_frames.append(fr)
+            cleaned_face.append(fa)
+    return cleaned_frames, cleaned_face
+    
+
+
+def get_face_locations(frames, GPU=False, batch_size=64):
     face_coordinates = []
     if GPU:
         for i in range(0, len(frames), batch_size):
@@ -32,7 +53,7 @@ def get_face_locations(frames, GPU=False, batch_size=96):
             face_coordinates += batch_face_locations
         face_coordinates = [f[-1] if f is not None and len(f) else None for f in face_coordinates]
     else:
-        for frame in frames:
+        for frame in tqdm(frames):
             coordinates_found = face_recognition.face_locations(frame)
             if coordinates_found is not None and len(coordinates_found):
                 face_coordinates.append(coordinates_found[-1])
@@ -108,11 +129,11 @@ def stabilise(face_coordinates, frames):
 
 
 def sub_average(frames, face_coordinates, interval):
-    h,w,c = frames[0].shape
     avg = []
 
     for sub_frames, sub_face_coordinates in zip(grouped(frames, n=interval), grouped(face_coordinates, n=interval)):
-        if (not None) in sub_face_coordinates:
+        sub_frames, sub_face_coordinates = filterNones(sub_frames, sub_face_coordinates)
+        if sub_face_coordinates is not None and len(sub_face_coordinates):
             crop = stabilise(sub_face_coordinates, sub_frames)
             avg.append(average(crop))
 
@@ -120,15 +141,27 @@ def sub_average(frames, face_coordinates, interval):
 
 
 def sub_difference(frames, face_coordinates, interval):
-    h,w,c = frames[0].shape
     diff = []
 
     for sub_frames, sub_face_coordinates in zip(grouped(frames, n=interval), grouped(face_coordinates, n=interval)):
-        if (not None) in sub_face_coordinates:
+        sub_frames, sub_face_coordinates = filterNones(sub_frames, sub_face_coordinates)
+        if sub_face_coordinates is not None and len(sub_face_coordinates):
             crop = stabilise(sub_face_coordinates, sub_frames)
             diff.append(difference(crop))
 
     return diff
+
+
+def sub_frames_every_interval(frames, face_coordinates, interval):
+    frames_at_end_of_interval = []
+
+    for sub_frames, sub_face_coordinates in zip(grouped(frames, n=interval), grouped(face_coordinates, n=interval)):
+        sub_frames, sub_face_coordinates = filterNones(sub_frames, sub_face_coordinates)
+        if sub_face_coordinates is not None and len(sub_face_coordinates):
+            last_crop = stabilise(sub_face_coordinates, sub_frames)[-1]
+            frames_at_end_of_interval.append(last_crop)
+
+    return frames_at_end_of_interval
 
 
 def average(frames):
