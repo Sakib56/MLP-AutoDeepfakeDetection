@@ -1,0 +1,1723 @@
+{'loss': 0.2157641500234604:
+
+acc': 0.6524085998535156:
+
+auc': 0.7117159962654114:
+
+fp': 546.0}THRESHOLD = 0.0
+        
+CONFUSION MATRIX
+[[    0  1600]
+ [    0 18038]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.00      0.00      0.00      1600
+        FAKE       0.92      1.00      0.96     18038
+
+    accuracy                           0.92     19638
+   macro avg       0.46      0.50      0.48     19638
+weighted avg       0.84      0.92      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.01
+        
+CONFUSION MATRIX
+[[    2  1598]
+ [   15 18023]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.12      0.00      0.00      1600
+        FAKE       0.92      1.00      0.96     18038
+
+    accuracy                           0.92     19638
+   macro avg       0.52      0.50      0.48     19638
+weighted avg       0.85      0.92      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.02
+        
+CONFUSION MATRIX
+[[    4  1596]
+ [   21 18017]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.16      0.00      0.00      1600
+        FAKE       0.92      1.00      0.96     18038
+
+    accuracy                           0.92     19638
+   macro avg       0.54      0.50      0.48     19638
+weighted avg       0.86      0.92      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.03
+        
+CONFUSION MATRIX
+[[    7  1593]
+ [   27 18011]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.21      0.00      0.01      1600
+        FAKE       0.92      1.00      0.96     18038
+
+    accuracy                           0.92     19638
+   macro avg       0.56      0.50      0.48     19638
+weighted avg       0.86      0.92      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.04
+        
+CONFUSION MATRIX
+[[    9  1591]
+ [   43 17995]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.17      0.01      0.01      1600
+        FAKE       0.92      1.00      0.96     18038
+
+    accuracy                           0.92     19638
+   macro avg       0.55      0.50      0.48     19638
+weighted avg       0.86      0.92      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.05
+        
+CONFUSION MATRIX
+[[   10  1590]
+ [   68 17970]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.13      0.01      0.01      1600
+        FAKE       0.92      1.00      0.96     18038
+
+    accuracy                           0.92     19638
+   macro avg       0.52      0.50      0.48     19638
+weighted avg       0.85      0.92      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.06
+        
+CONFUSION MATRIX
+[[   10  1590]
+ [   77 17961]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.11      0.01      0.01      1600
+        FAKE       0.92      1.00      0.96     18038
+
+    accuracy                           0.92     19638
+   macro avg       0.52      0.50      0.48     19638
+weighted avg       0.85      0.92      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.07
+        
+CONFUSION MATRIX
+[[   12  1588]
+ [   95 17943]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.11      0.01      0.01      1600
+        FAKE       0.92      0.99      0.96     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.52      0.50      0.48     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.08
+        
+CONFUSION MATRIX
+[[   12  1588]
+ [  116 17922]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.01      0.01      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.51      0.50      0.48     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.09
+        
+CONFUSION MATRIX
+[[   15  1585]
+ [  136 17902]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.01      0.02      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.51      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.1
+        
+CONFUSION MATRIX
+[[   17  1583]
+ [  152 17886]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.01      0.02      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.51      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.11
+        
+CONFUSION MATRIX
+[[   20  1580]
+ [  167 17871]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.11      0.01      0.02      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.51      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.12
+        
+CONFUSION MATRIX
+[[   22  1578]
+ [  181 17857]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.11      0.01      0.02      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.51      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.13
+        
+CONFUSION MATRIX
+[[   26  1574]
+ [  202 17836]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.11      0.02      0.03      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.52      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.14
+        
+CONFUSION MATRIX
+[[   30  1570]
+ [  225 17813]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.12      0.02      0.03      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.52      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.15
+        
+CONFUSION MATRIX
+[[   32  1568]
+ [  238 17800]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.12      0.02      0.03      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.52      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.16
+        
+CONFUSION MATRIX
+[[   35  1565]
+ [  264 17774]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.12      0.02      0.04      1600
+        FAKE       0.92      0.99      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.52      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.17
+        
+CONFUSION MATRIX
+[[   36  1564]
+ [  285 17753]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.11      0.02      0.04      1600
+        FAKE       0.92      0.98      0.95     18038
+
+    accuracy                           0.91     19638
+   macro avg       0.52      0.50      0.49     19638
+weighted avg       0.85      0.91      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.18
+        
+CONFUSION MATRIX
+[[   38  1562]
+ [  308 17730]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.11      0.02      0.04      1600
+        FAKE       0.92      0.98      0.95     18038
+
+    accuracy                           0.90     19638
+   macro avg       0.51      0.50      0.49     19638
+weighted avg       0.85      0.90      0.88     19638
+
+        _____________________________________________________
+THRESHOLD = 0.19
+        
+CONFUSION MATRIX
+[[   39  1561]
+ [  348 17690]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.02      0.04      1600
+        FAKE       0.92      0.98      0.95     18038
+
+    accuracy                           0.90     19638
+   macro avg       0.51      0.50      0.49     19638
+weighted avg       0.85      0.90      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.2
+        
+CONFUSION MATRIX
+[[   43  1557]
+ [  379 17659]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.03      0.04      1600
+        FAKE       0.92      0.98      0.95     18038
+
+    accuracy                           0.90     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.90      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.21
+        
+CONFUSION MATRIX
+[[   46  1554]
+ [  417 17621]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.03      0.04      1600
+        FAKE       0.92      0.98      0.95     18038
+
+    accuracy                           0.90     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.90      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.22
+        
+CONFUSION MATRIX
+[[   50  1550]
+ [  445 17593]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.03      0.05      1600
+        FAKE       0.92      0.98      0.95     18038
+
+    accuracy                           0.90     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.90      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.23
+        
+CONFUSION MATRIX
+[[   50  1550]
+ [  478 17560]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.03      0.05      1600
+        FAKE       0.92      0.97      0.95     18038
+
+    accuracy                           0.90     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.90      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.24
+        
+CONFUSION MATRIX
+[[   55  1545]
+ [  523 17515]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.03      0.05      1600
+        FAKE       0.92      0.97      0.94     18038
+
+    accuracy                           0.89     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.89      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.25
+        
+CONFUSION MATRIX
+[[   60  1540]
+ [  570 17468]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.04      0.05      1600
+        FAKE       0.92      0.97      0.94     18038
+
+    accuracy                           0.89     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.89      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.26
+        
+CONFUSION MATRIX
+[[   64  1536]
+ [  618 17420]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.04      0.06      1600
+        FAKE       0.92      0.97      0.94     18038
+
+    accuracy                           0.89     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.89      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.27
+        
+CONFUSION MATRIX
+[[   67  1533]
+ [  655 17383]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.04      0.06      1600
+        FAKE       0.92      0.96      0.94     18038
+
+    accuracy                           0.89     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.89      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.28
+        
+CONFUSION MATRIX
+[[   75  1525]
+ [  711 17327]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.10      0.05      0.06      1600
+        FAKE       0.92      0.96      0.94     18038
+
+    accuracy                           0.89     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.89      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.29
+        
+CONFUSION MATRIX
+[[   77  1523]
+ [  760 17278]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.05      0.06      1600
+        FAKE       0.92      0.96      0.94     18038
+
+    accuracy                           0.88     19638
+   macro avg       0.51      0.50      0.50     19638
+weighted avg       0.85      0.88      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.3
+        
+CONFUSION MATRIX
+[[   81  1519]
+ [  820 17218]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.05      0.06      1600
+        FAKE       0.92      0.95      0.94     18038
+
+    accuracy                           0.88     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.88      0.87     19638
+
+        _____________________________________________________
+THRESHOLD = 0.31
+        
+CONFUSION MATRIX
+[[   85  1515]
+ [  876 17162]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.05      0.07      1600
+        FAKE       0.92      0.95      0.93     18038
+
+    accuracy                           0.88     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.88      0.86     19638
+
+        _____________________________________________________
+THRESHOLD = 0.32
+        
+CONFUSION MATRIX
+[[   88  1512]
+ [  941 17097]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.06      0.07      1600
+        FAKE       0.92      0.95      0.93     18038
+
+    accuracy                           0.88     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.88      0.86     19638
+
+        _____________________________________________________
+THRESHOLD = 0.33
+        
+CONFUSION MATRIX
+[[   97  1503]
+ [ 1011 17027]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.06      0.07      1600
+        FAKE       0.92      0.94      0.93     18038
+
+    accuracy                           0.87     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.87      0.86     19638
+
+        _____________________________________________________
+THRESHOLD = 0.34
+        
+CONFUSION MATRIX
+[[  104  1496]
+ [ 1085 16953]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.07      0.07      1600
+        FAKE       0.92      0.94      0.93     18038
+
+    accuracy                           0.87     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.87      0.86     19638
+
+        _____________________________________________________
+THRESHOLD = 0.35
+        
+CONFUSION MATRIX
+[[  110  1490]
+ [ 1173 16865]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.07      0.08      1600
+        FAKE       0.92      0.93      0.93     18038
+
+    accuracy                           0.86     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.86      0.86     19638
+
+        _____________________________________________________
+THRESHOLD = 0.36
+        
+CONFUSION MATRIX
+[[  122  1478]
+ [ 1273 16765]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.08      0.08      1600
+        FAKE       0.92      0.93      0.92     18038
+
+    accuracy                           0.86     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.86      0.86     19638
+
+        _____________________________________________________
+THRESHOLD = 0.37
+        
+CONFUSION MATRIX
+[[  129  1471]
+ [ 1380 16658]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.08      0.08      1600
+        FAKE       0.92      0.92      0.92     18038
+
+    accuracy                           0.85     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.85      0.85     19638
+
+        _____________________________________________________
+THRESHOLD = 0.38
+        
+CONFUSION MATRIX
+[[  143  1457]
+ [ 1490 16548]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.09      0.09      1600
+        FAKE       0.92      0.92      0.92     18038
+
+    accuracy                           0.85     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.85      0.85     19638
+
+        _____________________________________________________
+THRESHOLD = 0.39
+        
+CONFUSION MATRIX
+[[  159  1441]
+ [ 1625 16413]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.10      0.09      1600
+        FAKE       0.92      0.91      0.91     18038
+
+    accuracy                           0.84     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.84      0.85     19638
+
+        _____________________________________________________
+THRESHOLD = 0.4
+        
+CONFUSION MATRIX
+[[  175  1425]
+ [ 1794 16244]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.11      0.10      1600
+        FAKE       0.92      0.90      0.91     18038
+
+    accuracy                           0.84     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.84      0.84     19638
+
+        _____________________________________________________
+THRESHOLD = 0.41
+        
+CONFUSION MATRIX
+[[  190  1410]
+ [ 1997 16041]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.12      0.10      1600
+        FAKE       0.92      0.89      0.90     18038
+
+    accuracy                           0.83     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.83      0.84     19638
+
+        _____________________________________________________
+THRESHOLD = 0.42
+        
+CONFUSION MATRIX
+[[  213  1387]
+ [ 2246 15792]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.13      0.10      1600
+        FAKE       0.92      0.88      0.90     18038
+
+    accuracy                           0.82     19638
+   macro avg       0.50      0.50      0.50     19638
+weighted avg       0.85      0.82      0.83     19638
+
+        _____________________________________________________
+THRESHOLD = 0.43
+        
+CONFUSION MATRIX
+[[  242  1358]
+ [ 2529 15509]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.15      0.11      1600
+        FAKE       0.92      0.86      0.89     18038
+
+    accuracy                           0.80     19638
+   macro avg       0.50      0.51      0.50     19638
+weighted avg       0.85      0.80      0.83     19638
+
+        _____________________________________________________
+THRESHOLD = 0.44
+        
+CONFUSION MATRIX
+[[  281  1319]
+ [ 2897 15141]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.18      0.12      1600
+        FAKE       0.92      0.84      0.88     18038
+
+    accuracy                           0.79     19638
+   macro avg       0.50      0.51      0.50     19638
+weighted avg       0.85      0.79      0.82     19638
+
+        _____________________________________________________
+THRESHOLD = 0.45
+        
+CONFUSION MATRIX
+[[  318  1282]
+ [ 3345 14693]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.20      0.12      1600
+        FAKE       0.92      0.81      0.86     18038
+
+    accuracy                           0.76     19638
+   macro avg       0.50      0.51      0.49     19638
+weighted avg       0.85      0.76      0.80     19638
+
+        _____________________________________________________
+THRESHOLD = 0.46
+        
+CONFUSION MATRIX
+[[  369  1231]
+ [ 3865 14173]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.23      0.13      1600
+        FAKE       0.92      0.79      0.85     18038
+
+    accuracy                           0.74     19638
+   macro avg       0.50      0.51      0.49     19638
+weighted avg       0.85      0.74      0.79     19638
+
+        _____________________________________________________
+THRESHOLD = 0.47
+        
+CONFUSION MATRIX
+[[  426  1174]
+ [ 4446 13592]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.27      0.13      1600
+        FAKE       0.92      0.75      0.83     18038
+
+    accuracy                           0.71     19638
+   macro avg       0.50      0.51      0.48     19638
+weighted avg       0.85      0.71      0.77     19638
+
+        _____________________________________________________
+THRESHOLD = 0.48
+        
+CONFUSION MATRIX
+[[  494  1106]
+ [ 5159 12879]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.31      0.14      1600
+        FAKE       0.92      0.71      0.80     18038
+
+    accuracy                           0.68     19638
+   macro avg       0.50      0.51      0.47     19638
+weighted avg       0.85      0.68      0.75     19638
+
+        _____________________________________________________
+THRESHOLD = 0.49
+        
+CONFUSION MATRIX
+[[  564  1036]
+ [ 5913 12125]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.35      0.14      1600
+        FAKE       0.92      0.67      0.78     18038
+
+    accuracy                           0.65     19638
+   macro avg       0.50      0.51      0.46     19638
+weighted avg       0.85      0.65      0.73     19638
+
+        _____________________________________________________
+THRESHOLD = 0.5
+        
+CONFUSION MATRIX
+[[  623   977]
+ [ 6711 11327]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.39      0.14      1600
+        FAKE       0.92      0.63      0.75     18038
+
+    accuracy                           0.61     19638
+   macro avg       0.50      0.51      0.44     19638
+weighted avg       0.85      0.61      0.70     19638
+
+        _____________________________________________________
+THRESHOLD = 0.51
+        
+CONFUSION MATRIX
+[[  692   908]
+ [ 7401 10637]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.43      0.14      1600
+        FAKE       0.92      0.59      0.72     18038
+
+    accuracy                           0.58     19638
+   macro avg       0.50      0.51      0.43     19638
+weighted avg       0.85      0.58      0.67     19638
+
+        _____________________________________________________
+THRESHOLD = 0.52
+        
+CONFUSION MATRIX
+[[ 751  849]
+ [8075 9963]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.47      0.14      1600
+        FAKE       0.92      0.55      0.69     18038
+
+    accuracy                           0.55     19638
+   macro avg       0.50      0.51      0.42     19638
+weighted avg       0.85      0.55      0.65     19638
+
+        _____________________________________________________
+THRESHOLD = 0.53
+        
+CONFUSION MATRIX
+[[ 814  786]
+ [8722 9316]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.51      0.15      1600
+        FAKE       0.92      0.52      0.66     18038
+
+    accuracy                           0.52     19638
+   macro avg       0.50      0.51      0.40     19638
+weighted avg       0.85      0.52      0.62     19638
+
+        _____________________________________________________
+THRESHOLD = 0.54
+        
+CONFUSION MATRIX
+[[ 879  721]
+ [9330 8708]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.09      0.55      0.15      1600
+        FAKE       0.92      0.48      0.63     18038
+
+    accuracy                           0.49     19638
+   macro avg       0.50      0.52      0.39     19638
+weighted avg       0.86      0.49      0.59     19638
+
+        _____________________________________________________
+THRESHOLD = 0.55
+        
+CONFUSION MATRIX
+[[ 922  678]
+ [9934 8104]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.58      0.15      1600
+        FAKE       0.92      0.45      0.60     18038
+
+    accuracy                           0.46     19638
+   macro avg       0.50      0.51      0.38     19638
+weighted avg       0.85      0.46      0.57     19638
+
+        _____________________________________________________
+THRESHOLD = 0.56
+        
+CONFUSION MATRIX
+[[  963   637]
+ [10495  7543]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.60      0.15      1600
+        FAKE       0.92      0.42      0.58     18038
+
+    accuracy                           0.43     19638
+   macro avg       0.50      0.51      0.36     19638
+weighted avg       0.85      0.43      0.54     19638
+
+        _____________________________________________________
+THRESHOLD = 0.57
+        
+CONFUSION MATRIX
+[[  999   601]
+ [11008  7030]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.62      0.15      1600
+        FAKE       0.92      0.39      0.55     18038
+
+    accuracy                           0.41     19638
+   macro avg       0.50      0.51      0.35     19638
+weighted avg       0.85      0.41      0.52     19638
+
+        _____________________________________________________
+THRESHOLD = 0.58
+        
+CONFUSION MATRIX
+[[ 1038   562]
+ [11378  6660]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.65      0.15      1600
+        FAKE       0.92      0.37      0.53     18038
+
+    accuracy                           0.39     19638
+   macro avg       0.50      0.51      0.34     19638
+weighted avg       0.85      0.39      0.50     19638
+
+        _____________________________________________________
+THRESHOLD = 0.59
+        
+CONFUSION MATRIX
+[[ 1060   540]
+ [11794  6244]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.66      0.15      1600
+        FAKE       0.92      0.35      0.50     18038
+
+    accuracy                           0.37     19638
+   macro avg       0.50      0.50      0.32     19638
+weighted avg       0.85      0.37      0.47     19638
+
+        _____________________________________________________
+THRESHOLD = 0.6
+        
+CONFUSION MATRIX
+[[ 1103   497]
+ [12198  5840]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.69      0.15      1600
+        FAKE       0.92      0.32      0.48     18038
+
+    accuracy                           0.35     19638
+   macro avg       0.50      0.51      0.31     19638
+weighted avg       0.85      0.35      0.45     19638
+
+        _____________________________________________________
+THRESHOLD = 0.61
+        
+CONFUSION MATRIX
+[[ 1127   473]
+ [12592  5446]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.70      0.15      1600
+        FAKE       0.92      0.30      0.45     18038
+
+    accuracy                           0.33     19638
+   macro avg       0.50      0.50      0.30     19638
+weighted avg       0.85      0.33      0.43     19638
+
+        _____________________________________________________
+THRESHOLD = 0.62
+        
+CONFUSION MATRIX
+[[ 1160   440]
+ [12982  5056]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.72      0.15      1600
+        FAKE       0.92      0.28      0.43     18038
+
+    accuracy                           0.32     19638
+   macro avg       0.50      0.50      0.29     19638
+weighted avg       0.85      0.32      0.41     19638
+
+        _____________________________________________________
+THRESHOLD = 0.63
+        
+CONFUSION MATRIX
+[[ 1194   406]
+ [13337  4701]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.75      0.15      1600
+        FAKE       0.92      0.26      0.41     18038
+
+    accuracy                           0.30     19638
+   macro avg       0.50      0.50      0.28     19638
+weighted avg       0.85      0.30      0.39     19638
+
+        _____________________________________________________
+THRESHOLD = 0.64
+        
+CONFUSION MATRIX
+[[ 1230   370]
+ [13654  4384]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.77      0.15      1600
+        FAKE       0.92      0.24      0.38     18038
+
+    accuracy                           0.29     19638
+   macro avg       0.50      0.51      0.27     19638
+weighted avg       0.85      0.29      0.37     19638
+
+        _____________________________________________________
+THRESHOLD = 0.65
+        
+CONFUSION MATRIX
+[[ 1265   335]
+ [13979  4059]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.79      0.15      1600
+        FAKE       0.92      0.23      0.36     18038
+
+    accuracy                           0.27     19638
+   macro avg       0.50      0.51      0.26     19638
+weighted avg       0.86      0.27      0.34     19638
+
+        _____________________________________________________
+THRESHOLD = 0.66
+        
+CONFUSION MATRIX
+[[ 1293   307]
+ [14292  3746]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.81      0.15      1600
+        FAKE       0.92      0.21      0.34     18038
+
+    accuracy                           0.26     19638
+   macro avg       0.50      0.51      0.24     19638
+weighted avg       0.86      0.26      0.32     19638
+
+        _____________________________________________________
+THRESHOLD = 0.67
+        
+CONFUSION MATRIX
+[[ 1318   282]
+ [14586  3452]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.82      0.15      1600
+        FAKE       0.92      0.19      0.32     18038
+
+    accuracy                           0.24     19638
+   macro avg       0.50      0.51      0.23     19638
+weighted avg       0.86      0.24      0.30     19638
+
+        _____________________________________________________
+THRESHOLD = 0.68
+        
+CONFUSION MATRIX
+[[ 1337   263]
+ [14847  3191]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.84      0.15      1600
+        FAKE       0.92      0.18      0.30     18038
+
+    accuracy                           0.23     19638
+   macro avg       0.50      0.51      0.22     19638
+weighted avg       0.86      0.23      0.29     19638
+
+        _____________________________________________________
+THRESHOLD = 0.69
+        
+CONFUSION MATRIX
+[[ 1363   237]
+ [15087  2951]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.85      0.15      1600
+        FAKE       0.93      0.16      0.28     18038
+
+    accuracy                           0.22     19638
+   macro avg       0.50      0.51      0.21     19638
+weighted avg       0.86      0.22      0.27     19638
+
+        _____________________________________________________
+THRESHOLD = 0.7
+        
+CONFUSION MATRIX
+[[ 1378   222]
+ [15328  2710]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.86      0.15      1600
+        FAKE       0.92      0.15      0.26     18038
+
+    accuracy                           0.21     19638
+   macro avg       0.50      0.51      0.20     19638
+weighted avg       0.86      0.21      0.25     19638
+
+        _____________________________________________________
+THRESHOLD = 0.71
+        
+CONFUSION MATRIX
+[[ 1400   200]
+ [15552  2486]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.88      0.15      1600
+        FAKE       0.93      0.14      0.24     18038
+
+    accuracy                           0.20     19638
+   macro avg       0.50      0.51      0.20     19638
+weighted avg       0.86      0.20      0.23     19638
+
+        _____________________________________________________
+THRESHOLD = 0.72
+        
+CONFUSION MATRIX
+[[ 1416   184]
+ [15764  2274]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.89      0.15      1600
+        FAKE       0.93      0.13      0.22     18038
+
+    accuracy                           0.19     19638
+   macro avg       0.50      0.51      0.19     19638
+weighted avg       0.86      0.19      0.22     19638
+
+        _____________________________________________________
+THRESHOLD = 0.73
+        
+CONFUSION MATRIX
+[[ 1437   163]
+ [15974  2064]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.90      0.15      1600
+        FAKE       0.93      0.11      0.20     18038
+
+    accuracy                           0.18     19638
+   macro avg       0.50      0.51      0.18     19638
+weighted avg       0.86      0.18      0.20     19638
+
+        _____________________________________________________
+THRESHOLD = 0.74
+        
+CONFUSION MATRIX
+[[ 1452   148]
+ [16189  1849]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.91      0.15      1600
+        FAKE       0.93      0.10      0.18     18038
+
+    accuracy                           0.17     19638
+   macro avg       0.50      0.51      0.17     19638
+weighted avg       0.86      0.17      0.18     19638
+
+        _____________________________________________________
+THRESHOLD = 0.75
+        
+CONFUSION MATRIX
+[[ 1476   124]
+ [16368  1670]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.92      0.15      1600
+        FAKE       0.93      0.09      0.17     18038
+
+    accuracy                           0.16     19638
+   macro avg       0.51      0.51      0.16     19638
+weighted avg       0.86      0.16      0.17     19638
+
+        _____________________________________________________
+THRESHOLD = 0.76
+        
+CONFUSION MATRIX
+[[ 1492   108]
+ [16568  1470]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.93      0.15      1600
+        FAKE       0.93      0.08      0.15     18038
+
+    accuracy                           0.15     19638
+   macro avg       0.51      0.51      0.15     19638
+weighted avg       0.86      0.15      0.15     19638
+
+        _____________________________________________________
+THRESHOLD = 0.77
+        
+CONFUSION MATRIX
+[[ 1506    94]
+ [16732  1306]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.94      0.15      1600
+        FAKE       0.93      0.07      0.13     18038
+
+    accuracy                           0.14     19638
+   macro avg       0.51      0.51      0.14     19638
+weighted avg       0.86      0.14      0.14     19638
+
+        _____________________________________________________
+THRESHOLD = 0.78
+        
+CONFUSION MATRIX
+[[ 1516    84]
+ [16885  1153]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.95      0.15      1600
+        FAKE       0.93      0.06      0.12     18038
+
+    accuracy                           0.14     19638
+   macro avg       0.51      0.51      0.14     19638
+weighted avg       0.86      0.14      0.12     19638
+
+        _____________________________________________________
+THRESHOLD = 0.79
+        
+CONFUSION MATRIX
+[[ 1521    79]
+ [17008  1030]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.95      0.15      1600
+        FAKE       0.93      0.06      0.11     18038
+
+    accuracy                           0.13     19638
+   macro avg       0.51      0.50      0.13     19638
+weighted avg       0.86      0.13      0.11     19638
+
+        _____________________________________________________
+THRESHOLD = 0.8
+        
+CONFUSION MATRIX
+[[ 1531    69]
+ [17143   895]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.96      0.15      1600
+        FAKE       0.93      0.05      0.09     18038
+
+    accuracy                           0.12     19638
+   macro avg       0.51      0.50      0.12     19638
+weighted avg       0.86      0.12      0.10     19638
+
+        _____________________________________________________
+THRESHOLD = 0.81
+        
+CONFUSION MATRIX
+[[ 1542    58]
+ [17249   789]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.96      0.15      1600
+        FAKE       0.93      0.04      0.08     18038
+
+    accuracy                           0.12     19638
+   macro avg       0.51      0.50      0.12     19638
+weighted avg       0.86      0.12      0.09     19638
+
+        _____________________________________________________
+THRESHOLD = 0.82
+        
+CONFUSION MATRIX
+[[ 1550    50]
+ [17353   685]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.97      0.15      1600
+        FAKE       0.93      0.04      0.07     18038
+
+    accuracy                           0.11     19638
+   macro avg       0.51      0.50      0.11     19638
+weighted avg       0.86      0.11      0.08     19638
+
+        _____________________________________________________
+THRESHOLD = 0.83
+        
+CONFUSION MATRIX
+[[ 1554    46]
+ [17433   605]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.97      0.15      1600
+        FAKE       0.93      0.03      0.06     18038
+
+    accuracy                           0.11     19638
+   macro avg       0.51      0.50      0.11     19638
+weighted avg       0.86      0.11      0.07     19638
+
+        _____________________________________________________
+THRESHOLD = 0.84
+        
+CONFUSION MATRIX
+[[ 1560    40]
+ [17523   515]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.97      0.15      1600
+        FAKE       0.93      0.03      0.06     18038
+
+    accuracy                           0.11     19638
+   macro avg       0.50      0.50      0.10     19638
+weighted avg       0.86      0.11      0.06     19638
+
+        _____________________________________________________
+THRESHOLD = 0.85
+        
+CONFUSION MATRIX
+[[ 1564    36]
+ [17579   459]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.98      0.15      1600
+        FAKE       0.93      0.03      0.05     18038
+
+    accuracy                           0.10     19638
+   macro avg       0.50      0.50      0.10     19638
+weighted avg       0.86      0.10      0.06     19638
+
+        _____________________________________________________
+THRESHOLD = 0.86
+        
+CONFUSION MATRIX
+[[ 1571    29]
+ [17643   395]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.98      0.15      1600
+        FAKE       0.93      0.02      0.04     18038
+
+    accuracy                           0.10     19638
+   macro avg       0.51      0.50      0.10     19638
+weighted avg       0.86      0.10      0.05     19638
+
+        _____________________________________________________
+THRESHOLD = 0.87
+        
+CONFUSION MATRIX
+[[ 1574    26]
+ [17704   334]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.98      0.15      1600
+        FAKE       0.93      0.02      0.04     18038
+
+    accuracy                           0.10     19638
+   macro avg       0.50      0.50      0.09     19638
+weighted avg       0.86      0.10      0.05     19638
+
+        _____________________________________________________
+THRESHOLD = 0.88
+        
+CONFUSION MATRIX
+[[ 1579    21]
+ [17757   281]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.99      0.15      1600
+        FAKE       0.93      0.02      0.03     18038
+
+    accuracy                           0.09     19638
+   macro avg       0.51      0.50      0.09     19638
+weighted avg       0.86      0.09      0.04     19638
+
+        _____________________________________________________
+THRESHOLD = 0.89
+        
+CONFUSION MATRIX
+[[ 1584    16]
+ [17798   240]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.99      0.15      1600
+        FAKE       0.94      0.01      0.03     18038
+
+    accuracy                           0.09     19638
+   macro avg       0.51      0.50      0.09     19638
+weighted avg       0.87      0.09      0.04     19638
+
+        _____________________________________________________
+THRESHOLD = 0.9
+        
+CONFUSION MATRIX
+[[ 1589    11]
+ [17841   197]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.99      0.15      1600
+        FAKE       0.95      0.01      0.02     18038
+
+    accuracy                           0.09     19638
+   macro avg       0.51      0.50      0.09     19638
+weighted avg       0.88      0.09      0.03     19638
+
+        _____________________________________________________
+THRESHOLD = 0.91
+        
+CONFUSION MATRIX
+[[ 1591     9]
+ [17876   162]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      0.99      0.15      1600
+        FAKE       0.95      0.01      0.02     18038
+
+    accuracy                           0.09     19638
+   macro avg       0.51      0.50      0.08     19638
+weighted avg       0.88      0.09      0.03     19638
+
+        _____________________________________________________
+THRESHOLD = 0.92
+        
+CONFUSION MATRIX
+[[ 1594     6]
+ [17906   132]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       0.96      0.01      0.01     18038
+
+    accuracy                           0.09     19638
+   macro avg       0.52      0.50      0.08     19638
+weighted avg       0.89      0.09      0.03     19638
+
+        _____________________________________________________
+THRESHOLD = 0.93
+        
+CONFUSION MATRIX
+[[ 1594     6]
+ [17934   104]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       0.95      0.01      0.01     18038
+
+    accuracy                           0.09     19638
+   macro avg       0.51      0.50      0.08     19638
+weighted avg       0.88      0.09      0.02     19638
+
+        _____________________________________________________
+THRESHOLD = 0.94
+        
+CONFUSION MATRIX
+[[ 1595     5]
+ [17949    89]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       0.95      0.00      0.01     18038
+
+    accuracy                           0.09     19638
+   macro avg       0.51      0.50      0.08     19638
+weighted avg       0.88      0.09      0.02     19638
+
+        _____________________________________________________
+THRESHOLD = 0.95
+        
+CONFUSION MATRIX
+[[ 1597     3]
+ [17976    62]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       0.95      0.00      0.01     18038
+
+    accuracy                           0.08     19638
+   macro avg       0.52      0.50      0.08     19638
+weighted avg       0.88      0.08      0.02     19638
+
+        _____________________________________________________
+THRESHOLD = 0.96
+        
+CONFUSION MATRIX
+[[ 1598     2]
+ [17995    43]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       0.96      0.00      0.00     18038
+
+    accuracy                           0.08     19638
+   macro avg       0.52      0.50      0.08     19638
+weighted avg       0.88      0.08      0.02     19638
+
+        _____________________________________________________
+THRESHOLD = 0.97
+        
+CONFUSION MATRIX
+[[ 1599     1]
+ [18009    29]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       0.97      0.00      0.00     18038
+
+    accuracy                           0.08     19638
+   macro avg       0.52      0.50      0.08     19638
+weighted avg       0.89      0.08      0.02     19638
+
+        _____________________________________________________
+THRESHOLD = 0.98
+        
+CONFUSION MATRIX
+[[ 1600     0]
+ [18023    15]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       1.00      0.00      0.00     18038
+
+    accuracy                           0.08     19638
+   macro avg       0.54      0.50      0.08     19638
+weighted avg       0.93      0.08      0.01     19638
+
+        _____________________________________________________
+THRESHOLD = 0.99
+        
+CONFUSION MATRIX
+[[ 1600     0]
+ [18035     3]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       1.00      0.00      0.00     18038
+
+    accuracy                           0.08     19638
+   macro avg       0.54      0.50      0.08     19638
+weighted avg       0.93      0.08      0.01     19638
+
+        _____________________________________________________
+THRESHOLD = 1.0
+        
+CONFUSION MATRIX
+[[ 1600     0]
+ [18038     0]]
+        
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+        REAL       0.08      1.00      0.15      1600
+        FAKE       0.00      0.00      0.00     18038
+
+    accuracy                           0.08     19638
+   macro avg       0.04      0.50      0.08     19638
+weighted avg       0.01      0.08      0.01     19638
+
+        _____________________________________________________
